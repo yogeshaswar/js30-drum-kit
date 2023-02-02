@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="keys">
+    <!--The data-* attribute gives us the ability to embed custom data attributes on all HTML elements.-->
+    <div data-code="KeyA" class="key">
+      <!--It is used when a document needs to display the text which user should enter exactly from his keyboard.-->
+      <kbd>A</kbd>
+      <!--what is span tag in html - The <span> tag is an inline container used to mark up a part of a text, or a part of a document.-->
+      <span class="sound">clap</span>
+    </div>
+    <div data-code="KeyS" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-code="KeyD" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-code="KeyF" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-code="KeyG" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-code="KeyH" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-code="KeyJ" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-code="KeyK" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-code="KeyL" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio data-code="KeyA" src="sounds/clap.wav"></audio>
+  <audio data-code="KeyS" src="sounds/hihat.wav"></audio>
+  <audio data-code="KeyD" src="sounds/kick.wav"></audio>
+  <audio data-code="KeyF" src="sounds/openhat.wav"></audio>
+  <audio data-code="KeyG" src="sounds/boom.wav"></audio>
+  <audio data-code="KeyH" src="sounds/ride.wav"></audio>
+  <audio data-code="KeyJ" src="sounds/snare.wav"></audio>
+  <audio data-code="KeyK" src="sounds/tom.wav"></audio>
+  <audio data-code="KeyL" src="sounds/tink.wav"></audio>
+  <script src="App.js"></script>
+</body>
+</html>
